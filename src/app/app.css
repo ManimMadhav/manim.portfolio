@@ -1,0 +1,10 @@
+main {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 80vh;
+  padding: 48px 16px 24px;
+  scroll-margin-top: 70px; /* Offset for fixed navbar */
+  color: var(--text);
+}

@@ -1,0 +1,46 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo" (click)="scrollToTop()">
+      <h2>Manim Madhav</h2>
+    </div>
+    
+    <div class="hamburger" (click)="toggleMobileMenu()" [class.active]="mobileMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav-menu" [class.active]="mobileMenuOpen">
+      <li class="nav-item">
+        <a (click)="scrollToSection('about')" 
+           [class.active]="isActive('about')" 
+           class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('experience')" 
+           [class.active]="isActive('experience')" 
+           class="nav-link">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('projects')" 
+           [class.active]="isActive('projects')" 
+           class="nav-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('education')" 
+           [class.active]="isActive('education')" 
+           class="nav-link">Education</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('skills')" 
+           [class.active]="isActive('skills')" 
+           class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('contact')" 
+           [class.active]="isActive('contact')" 
+           class="nav-link">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>

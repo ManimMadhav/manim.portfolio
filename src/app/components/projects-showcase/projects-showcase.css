@@ -1,0 +1,138 @@
+.projects-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1.6rem;
+}
+
+.section-title {
+	font-size: 2.2rem;
+	color: var(--text);
+	margin-bottom: 2.4rem;
+	text-align: center;
+	position: relative;
+}
+
+.section-title::after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 4px;
+	background-color: var(--primary);
+	margin: 1rem auto 0;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 1.6rem;
+}
+
+.project-card {
+	background-color: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	overflow: hidden;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 18px rgba(0,0,0,0.28);
+}
+
+.project-content {
+	padding: 1.2rem;
+}
+
+.project-card h2 {
+	font-size: 1.15rem;
+	color: var(--primary);
+	margin-bottom: 0.8rem;
+}
+
+.project-description {
+	color: var(--muted);
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.project-features h3,
+.technologies h3 {
+	font-size: 1rem;
+	color: var(--text);
+	margin-bottom: 0.8rem;
+	margin-top: 1rem;
+}
+
+.project-features ul {
+	list-style: none;
+	padding: 0;
+}
+
+.project-features li {
+	padding: 0.35rem 0;
+	padding-left: 1.2rem;
+	position: relative;
+	color: var(--muted);
+	font-size: 0.95rem;
+}
+
+.project-features li::before {
+	content: '•';
+	position: absolute;
+	left: 0;
+	color: var(--primary);
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.tech-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.tech-tag {
+	background-color: rgba(74,155,240,0.08);
+	color: var(--primary);
+	padding: 0.35rem 0.7rem;
+	border-radius: 12px;
+	font-size: 0.82rem;
+	font-weight: 500;
+}
+
+.project-links {
+	display: flex;
+	gap: 0.8rem;
+	margin-top: 1rem;
+}
+
+.btn {
+	padding: 0.5rem 1.2rem;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.25s ease;
+	display: inline-block;
+	font-size: 0.95rem;
+}
+
+.btn-github {
+	background-color: #111;
+	color: #fff;
+}
+
+.btn-github:hover {
+	background-color: #333;
+}
+
+.btn-live {
+	background-color: var(--primary);
+	color: #012029;
+}
+
+.btn-live:hover {
+	background-color: #4a9bf0;
+}
+

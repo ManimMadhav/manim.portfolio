@@ -1,0 +1,250 @@
+.contact-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1.6rem;
+}
+
+.section-title {
+	font-size: 2.2rem;
+	color: var(--text);
+	margin-bottom: 2.4rem;
+	text-align: center;
+	position: relative;
+}
+
+.section-title::after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 4px;
+	background-color: var(--primary);
+	margin: 1rem auto 0;
+}
+
+.contact-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+	font-size: 1.15rem;
+	color: var(--text);
+	margin-bottom: 1rem;
+}
+
+.contact-info.centered {
+	grid-column: 1 / -1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.contact-info.centered .info-items,
+.contact-info.centered .social-links {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-info.centered .info-item {
+	width: 90%;
+	max-width: 520px;
+}
+
+/* Keep contact-info centered but show icon and text inline */
+.contact-info.centered .info-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0.9rem;
+}
+
+.label-row {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.contact-info.centered .icon {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+.contact-info.centered .info-text {
+	margin-top: 0.35rem;
+}
+
+.intro {
+	color: var(--muted);
+	line-height: 1.6;
+	margin-bottom: 1.2rem;
+}
+
+.info-items {
+	margin-bottom: 1.2rem;
+}
+
+.info-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+	padding: 0.8rem;
+	background-color: var(--card-bg);
+	border-radius: 8px;
+	border: 1px solid var(--border);
+}
+
+.icon {
+	font-size: 1.2rem;
+	margin-right: 0.8rem;
+}
+
+.info-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-text strong {
+	color: var(--text);
+	margin-bottom: 0.2rem;
+}
+
+.info-text span,
+.info-text a {
+	color: var(--muted);
+	text-decoration: none;
+}
+
+.info-text a:hover {
+	color: var(--primary);
+}
+
+.social-links {
+	margin-top: 1rem;
+}
+
+.social-links h3 {
+	font-size: 1rem;
+	color: var(--text);
+	margin-bottom: 0.8rem;
+}
+
+.social-icons {
+	display: flex;
+	gap: 0.6rem;
+	flex-wrap: wrap;
+}
+
+.social-link {
+	padding: 0.5rem 1rem;
+	background-color: var(--primary);
+	color: #012029;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.25s ease;
+	font-weight: 500;
+	font-size: 0.95rem;
+}
+
+.social-link:hover {
+	background-color: #4a9bf0;
+}
+
+.contact-form-wrapper {
+	background-color: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 1.2rem;
+	box-shadow: 0 2px 8px var(--shadow);
+}
+
+.success-message {
+	background-color: rgba(52,211,153,0.08);
+	color: #bff3dc;
+	padding: 0.9rem;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+	border: 1px solid rgba(52,211,153,0.12);
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.form-group label {
+	display: block;
+	color: var(--text);
+	font-weight: 500;
+	margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 0.6rem;
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	font-size: 0.95rem;
+	background: transparent;
+	color: var(--text);
+	transition: border-color 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: var(--primary);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+	border-color: #ff6b6b;
+}
+
+.error-message {
+	color: #ff9494;
+	font-size: 0.85rem;
+	margin-top: 0.4rem;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+.submit-btn {
+	width: 100%;
+	padding: 0.9rem;
+	background-color: var(--primary);
+	color: #012029;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.25s ease;
+}
+
+.submit-btn:hover {
+	background-color: #4a9bf0;
+}
+
+.submit-btn:active {
+	transform: translateY(1px);
+}
+
+@media (max-width: 968px) {
+	.contact-content {
+		grid-template-columns: 1fr;
+	}
+
+	.section-title {
+		font-size: 1.8rem;
+	}
+}
+

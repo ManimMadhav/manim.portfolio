@@ -1,0 +1,29 @@
+<div class="skills-container">
+	<h1 class="section-title">Skills & Certifications</h1>
+  
+	<div class="skills-section">
+		<h2 class="subsection-title">Technical Skills</h2>
+		<div class="skills-grid">
+				<div class="skill-category" *ngFor="let category of skillCategories">
+					<h3>{{ category }}</h3>
+					<div class="skill-tags">
+						<span class="skill-tag" *ngFor="let skill of getSkillsByCategory(category)">{{ skill.name }}</span>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="certifications-section">
+		<h2 class="subsection-title">Certifications</h2>
+		<div class="certifications-grid">
+			<div class="certification-card" *ngFor="let cert of certifications">
+				<h3>{{ cert.name }}</h3>
+				<p class="issuer">{{ cert.issuer }}</p>
+				<p class="date">Issued: {{ cert.date }}</p>
+				<p class="credential" *ngIf="cert.credentialId">
+					Credential ID: {{ cert.credentialId }}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

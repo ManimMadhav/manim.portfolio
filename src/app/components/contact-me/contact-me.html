@@ -1,0 +1,39 @@
+<div class="contact-container">
+	<h1 class="section-title">Contact Me</h1>
+  
+	<div class="contact-content">
+	    <div class="contact-info centered">
+	      <h2>Get In Touch</h2>
+	      <p class="intro">Feel free to reach out to me for any questions, opportunities, or just to say hello!</p>
+      
+			<div class="info-items">
+				<div class="info-item">
+					<div class="label-row">
+						<span class="icon">📧</span>
+						<strong>Email</strong>
+					</div>
+					<div class="info-text">
+						<a [href]="'mailto:' + contactInfo.email">{{ contactInfo.email }}</a>
+					</div>
+				</div>
+
+				<div class="info-item">
+					<div class="label-row">
+						<span class="icon">📍</span>
+						<strong>Location</strong>
+					</div>
+					<div class="info-text">
+						<span>{{ contactInfo.location }}</span>
+					</div>
+				</div>
+			</div>
+      
+			<div class="social-links">
+				<h3>Connect With Me</h3>
+				<div class="social-icons">
+					<a [href]="contactInfo.linkedin" target="_blank" class="social-link">LinkedIn</a>
+					<a [href]="contactInfo.github" target="_blank" class="social-link">GitHub</a>
+				</div>
+			</div>
+	</div>
+</div>

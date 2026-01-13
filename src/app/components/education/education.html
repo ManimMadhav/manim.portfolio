@@ -1,0 +1,19 @@
+<div class="education-container">
+	<h1 class="section-title">Education</h1>
+	<div class="education-timeline">
+		<div class="education-card" *ngFor="let edu of educationList">
+			<div class="card-content">
+				<h2>{{ edu.degree }}</h2>
+				<h3>{{ edu.institution }}</h3>
+				<p class="period">{{ edu.period }}</p>
+				<p class="description">{{ edu.description }}</p>
+				<div class="achievements">
+					<h4>Achievements:</h4>
+					<ul>
+						<li *ngFor="let achievement of edu.achievements">{{ achievement }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
